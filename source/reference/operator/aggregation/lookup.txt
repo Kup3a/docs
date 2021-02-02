@@ -104,7 +104,7 @@ The operation would correspond to the following pseudo-SQL statement:
 
    SELECT *, <output array field>
    FROM collection
-   WHERE <output array field> IN (SELECT *
+   WHERE <field from the input documents> IN (SELECT *
                                   FROM <collection to join>
                                   WHERE <foreignField>= <collection.localField>);
 
